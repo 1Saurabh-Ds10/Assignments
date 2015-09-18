@@ -4,7 +4,7 @@
 		2) Newly entered unique values are not getting concatenated with existing predefined Array.
 		   Eg: If the predefined array has values like 1000, 1001 & if the user enters 1002 then 1002 will not get concatenated
 		       with existing 1000, 1001. So in the next iteration if the user again enters 1002, it will display the same result
-               as before.	
+               	       as before.	
 		3) This program will throw an error for improper range.
 
 */
@@ -83,22 +83,21 @@
 		   It takes the values entered in the textbox by the user, passes & calls 'getDuplicateAndUniqueArrayValues'
 		   function of logic Component(where all the processing gets performed).
 		   And finally sets State with the values returned from the above function.
-		
 		*/
 		handleKeyUp: function(e) {
 			
 			clearTimeout(timer);
 			var val = e.target.value,
-				self = this;
+			    self = this;
 			var output;	
 			
 			// Timeout to hold the callback for 1500 ms.
 			timer = setTimeout(function() {
-				// output object contatining 4 Arrays gets returned from the function of logicComponent
-				output = logicComponent.getDuplicateAndUniqueArrayValues(val);
-				self.setState({output: output});
+					// output object contatining 4 Arrays gets returned from the function of logicComponent
+					output = logicComponent.getDuplicateAndUniqueArrayValues(val);
+					self.setState({output: output});
 				
-            }, 1500);
+            			}, 1500);
 			
 		},
 		render : function() {
@@ -164,7 +163,7 @@
 			});
 			
 			/* 'allUniqueValsArr' array is the combination of predefined array & unique user entered elements,
-				which were not there in predefined array.
+			    which were not there in predefined array.
 			*/
 			objWrapper.allUniqueValsArr = objWrapper.allUniqueValsArr.concat(arrayToCheck, objWrapper.uniqueValsArr);
 			return objWrapper;
@@ -198,7 +197,7 @@
 				} else {
 				
 					var range1 = Number(element.split('-')[0]),
-						range2 = Number(element.split('-')[1]);
+					    range2 = Number(element.split('-')[1]);
 						
 					if (!(isNaN(range1)) && !(isNaN(range2))) {
 						
