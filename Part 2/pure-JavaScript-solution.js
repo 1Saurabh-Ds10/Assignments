@@ -31,10 +31,10 @@
 			
 			// if its not a string, convert it to a string & extra spaces not trimmed
 			var originalTempStr = (typeof originalString === 'string' || (originalString instanceof String))
-								? originalString /*.toLowerCase() */ : originalString.toString(); 
+						? originalString /*.toLowerCase() */ : originalString.toString(); 
 			
 			var rotatedTempString = (typeof rotatedString === 'string' || (rotatedString instanceof String))
-								? rotatedString /*.toLowerCase() */ : rotatedString.toString();  // no string space trimming
+						? rotatedString /*.toLowerCase() */ : rotatedString.toString();  // no string space trimming
 			
 			// if both strings are of different length or both strings are Same
 			if ((originalTempStr.length !== rotatedTempString.length) 
@@ -55,10 +55,10 @@
 						
 						/* if all other characters of 2nd string match with the first string - in chain
 						   i.e. one after another - by continuing till end and again starting from beginning, 
-							    then the 2nd string is a rotation of first string
+		 				        then the 2nd string is a rotation of first string
 						*/
 						isRotated = (originalTempStr.charAt(j) === rotatedTempString.charAt(temp))
-									? true : false;
+								? true : false;
 													
 						if (temp < l-1) {
 							temp++;
