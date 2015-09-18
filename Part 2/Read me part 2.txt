@@ -1,0 +1,14 @@
+Note:
+
+1) This program is only tested in Firefox.
+2) This program is case sensitive i.e. 'JavaScript' & its rotated counterpart 'scriptjava' will return false.
+	
+3) If the values passed are falsy then program will throw an error.
+
+4) If the values entered are other then string, it will convert the values to string.
+
+i.e. '12345' & 51234 will return true.
+	
+5) This program doesn't trim the string with extra leading or trailing space.
+
+6) If the string & rotatedString both are equal i.e. 0 rotation, it will return false.

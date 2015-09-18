@@ -1,0 +1,8 @@
+Note: 
+
+1) It is tested & works best in Firefox browser.
+2) There will be 1.5 secs delay before displaying the result (to avoid frequent callbacks, after every 'single digit' input)
+3) Newly entered unique values are not getting concatenated with existing predefined Array.
+Eg: If the predefined array has values like 1000, 1001 & if the user enters 1002 then 1002 will not get concatenated with existing 1000, 1001. So in the next iteration if the user again enters 1002, it will display the same result
+as before.
+4) I had no prior knowledge of React library so I may not have followed the best practics.

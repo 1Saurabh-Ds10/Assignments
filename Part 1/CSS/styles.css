@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* ########## Reset CSS ########## */
+
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* HTML5 display reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* ########## Reset CSS Ends ########## */
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 1.0em;
+}
+
+.content {
+	width: 100%;
+	float: left;
+	height: 1024px;
+	margin: 0 auto;
+	background-color: #EEE;
+}
+.inner-content {
+	float: left;
+	margin: 10% 0 0 35%;
+}
+
+input {
+	padding: 2%;
+	border: 1px solid #CCC;
+	width: 385px;
+}
+
+.notification-wrapper {
+	float: left;
+	width: 400px;
+	margin-top: 10%;
+	border: 1px solid #CCC;
+	padding: 1%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 3px #888888;
+	/*visibility:hidden;*/
+}
+.notification-wrapper p {
+	color: #111;
+	margin: 3% 0 3% 0;
+	font-size: 1.15em;
+	font-style: oblique;
+}
+.notification-wrapper span{
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #222;
+	padding: 1%;
+	margin: 3% 0 3% 0;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity .6s ease-in;
+}
+.example-leave {
+	visibility: hidden;
+    height: 0px;
+    width: 0px;
+    opacity: 1;
+}
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity .6s ease-in;
+}
+.example-appear {
+  opacity: 0.01;
+  transition: opacity .6s ease-in;
+}
+.example-appear.example-appear-active {
+  opacity: 1;
+}
