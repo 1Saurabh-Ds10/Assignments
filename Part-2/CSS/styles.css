@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* ########## Reset CSS ########## */
+
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* HTML5 display reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* ########## Reset CSS Ends ########## */
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 1.1em;
+}
+
+.content {
+	width: 100%;
+	float: left;
+	height: 500px;
+	margin: 0 auto;
+	background-color: #EEE;
+}
+.inner-content {
+	float: left;
+	margin: 10% 0 0 35%;
+	width: 50%;
+}
+
+form {
+	width: 100%;
+}
+
+label {
+	font-weight: 200;
+	display: inline-block; 
+	width: 110px; 
+	text-align: right;
+}
+input {
+	padding: 1%;
+	border: 1px solid #CCC;
+	margin: 1% 0 1% 1%;
+}
+input:nth-child(7) {
+	margin: 2% 0% 1% 7%;
+}
+
+button {
+	padding: 1%;
+	font-size: 0.8em;
+	margin: 2% 0 1% 0%;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+}
+
+.success {
+	color: green;
+}
+.notSuccess {
+	color: red;
+}
+
+.hidden {
+	display: none !important;
+}
