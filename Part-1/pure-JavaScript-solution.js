@@ -4,7 +4,7 @@
 		2) Newly entered unique values are not getting concatenated with existing predefined Array.
 		   Eg: If the predefined array has values like 1000, 1001 & if the user enters 1002 then 1002 will not get concatenated
 		       with existing 1000, 1001. So in the next iteration if the user again enters 1002, it will display the same result
-               as before.			   
+               	       as before.			   
 		3) This program will throw an error for improper range.
 */
 
@@ -24,8 +24,7 @@
 	   It passes the string & calls 'splitStringToNumberArray' function to get the actual number array.
 	   It also calls 'getPredefinedArrayToCheck' function to get the predefined array.
 	   It then performs the processing and returns an output object with 4 arrays i.e.
-	   predefined values array, unique values array, duplicate values array, all unique 
-	   values array
+	   predefined values array, unique values array, duplicate values array, all unique values array
 	*/
 	function getDuplicateAndUniqueArrayValues(userEnteredNumbersInStringForm) {
 		
@@ -64,7 +63,7 @@
 		});
 		
 		/* 'allUniqueValsArr' array is the combination of predefined array & unique user entered elements,
-			which were not there in predefined array.
+		    which were not there in predefined array.
 		*/
 		objWrapper.allUniqueValsArr = objWrapper.allUniqueValsArr.concat(objWrapper.predefinedValsArr, objWrapper.uniqueValsArr);
 		return objWrapper;
@@ -93,11 +92,11 @@
 						throw new Error('Not a number');
 					}
 				
-			// if its a range
+				// if its a range
 				} else {
 				
 					var range1 = Number(element.split('-')[0]),
-						range2 = Number(element.split('-')[1]);
+			      	 	    range2 = Number(element.split('-')[1]);
 						
 					if (!(isNaN(range1)) && !(isNaN(range2))) {
 						
