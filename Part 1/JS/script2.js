@@ -18,7 +18,7 @@
 	
 	
 	/* Data Component to store predefined data
-	   It can be extendible to write functions to set or remove additional values in array
+	   It can be extended to write functions to set or remove additional values in array
 	*/
 	var dataComponent = {
 		
