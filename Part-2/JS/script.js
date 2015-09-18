@@ -46,10 +46,10 @@ $(function(){
 			
 				// if its not a string, convert it to a string & extra spaces not trimmed
 				var originalTempStr = (typeof originalString === 'string' || (originalString instanceof String))
-									? originalString /*.toLowerCase() */ : originalString.toString(); 
+						      ? originalString /*.toLowerCase() */ : originalString.toString(); 
 			
 				var rotatedTempString = (typeof rotatedString === 'string' || (rotatedString instanceof String))
-									  ? rotatedString /*.toLowerCase() */ : rotatedString.toString();
+						        ? rotatedString /*.toLowerCase() */ : rotatedString.toString();
 			
 				// if both strings are of different length or both strings are Same
 				if ((originalTempStr.length !== rotatedTempString.length) 
@@ -74,7 +74,7 @@ $(function(){
 							   then the 2nd string is a rotation of first string
 							*/
 							isRotated = (originalTempStr.charAt(j) === rotatedTempString.charAt(temp))
-											? true : false;
+									? true : false;
 													
 							if (temp < l-1) {
 								temp++;
